@@ -1,2 +1,2 @@
-# Skincare
-![Skincare](https://github.com/Edanriell/oldProjects-2/blob/master/AnimatedText/skincare.png?raw=true)
+# M-mind
+![M-mind](https://github.com/Edanriell/M-mind/blob/master/mmind.png?raw=true)
