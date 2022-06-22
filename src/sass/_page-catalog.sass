@@ -1,0 +1,78 @@
+.catalog
+  padding: 60px 0 58px 0
+  .image-list
+    display: grid
+    grid-auto-flow: dense
+    grid-template-columns: repeat(5, minmax(120px, 548px))
+    grid-gap: 20px
+    &__item
+      position: relative
+      &:before
+        content: ''
+        width: 100%
+        height: 80px
+        position: absolute
+        z-index: 2
+        top: 0
+        left: 0
+        background: linear-gradient(180deg, rgba(12, 12, 13, 0.6) 0%, rgba(12, 12, 13, 0) 100%)
+      &:after
+        margin: 18px 0 0 10px
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 12px
+        height: 10px
+        background: url("../img/icons/heart.svg")
+        z-index: 4
+      img
+        position: relative
+        height: 100%
+        object-fit: cover
+        vertical-align: middle
+        max-width: 100%
+        height: auto    
+        z-index: 1
+      p
+        margin: 14px 0 0 30px
+        font-family: "SourceSansPro-SemiBold", sans-serif
+        font-weight: 600
+        font-style: normal
+        font-size: 1.4rem
+        line-height: 1.76rem
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 3
+        color: rgba(255, 255, 255, 1)
+    .item--large
+      grid-column: span 2
+      grid-row: span 2
+    .item--medium
+      grid-column: span 1
+      grid-row: span 2
+    .item--small
+      grid-column: span 2
+      grid-row: span 1
+.fade-in-fwd 
+  -webkit-animation: fade-in-fwd 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+  animation: fade-in-fwd 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+@-webkit-keyframes fade-in-fwd 
+  0% 
+    -webkit-transform: perspective(800px) translateZ(-80px)
+    transform: perspective(800px) translateZ(-80px)
+    opacity: 0
+  100% 
+    -webkit-transform: perspective(800px) translateZ(0)
+    transform: perspective(800px) translateZ(0)
+    opacity: 1
+@keyframes fade-in-fwd 
+  0% 
+    -webkit-transform: perspective(800px) translateZ(-80px)
+    transform: perspective(800px) translateZ(-80px)
+    opacity: 0
+  100% 
+    -webkit-transform: perspective(800px) translateZ(0)
+    transform: perspective(800px) translateZ(0)
+    opacity: 1

@@ -1,0 +1,165 @@
+@import ~normalize.css
+@import "./fonts/sourceSansPro"
+@import "page-header"
+@import "page-main"
+@import "page-footer"
+@import "page-error"
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+html
+  font-size: 62.5%
+  scroll-behavior: smooth
+h1,h2,h3,h4,h5,h6
+  padding: 0
+  margin: 0
+ul
+  list-style: none
+a
+  text-decoration: none
+  color: rgba(12, 12, 13, 1)
+body
+  display: grid
+  grid-template-rows: [header] auto [main] 1fr [footer] auto
+  min-width: 1400px
+  height: 100vh
+  font-family: "SourceSansPro-Regular", "Arial", sans-serif
+  font-weight: 400
+  font-style: normal
+  font-size: 1.6rem
+  line-height: 2.011rem
+  color: rgba(12, 12, 13, 1)
+.button
+  line-height: 2.011rem
+  color: inherit
+  &--filled
+    padding: 9px 20px 11px 20px
+    background: rgba(242, 242, 242, 1)
+    border-radius: 30px
+    border: none
+    outline: none
+    cursor: pointer
+    transition: all 0.15s ease-in-out
+    &:hover
+      background: rgba(12, 12, 13, 1)
+      color: #FFF
+  &--outlined
+    display: block
+    margin: 108px auto 0 auto
+    padding: 17px 80px
+    border: 1px solid rgba(12, 12, 13, 1)
+    border-radius: 30px
+    background: transparent
+    cursor: pointer
+    transition: all 0.15s ease-in-out
+    &:hover
+      background: rgba(12, 12, 13, 1)
+      color: #FFF
+.visually-hidden
+  position: absolute
+  width: 1px
+  height: 1px
+  margin: -1px
+  border: 0
+  padding: 0
+  white-space: nowrap
+  clip-path: inset(100%)
+  clip: rect(0 0 0 0)
+  overflow: hidden
+.flex
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+.container
+  width: 1400px
+  margin: 0 auto
+.pageup
+  opacity: 0
+  width: 60px
+  height: 60px
+  position: fixed
+  bottom: 100px
+  right: 50%
+  z-index: 2
+  background: url("../img/icons/chevron-circle-up-solid.svg") white
+  cursor: pointer
+  border-radius: 50%
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px
+.slide-in-blurred-bottom 
+  -webkit-animation: slide-in-blurred-bottom 0.6s cubic-bezier(0.455, 0.030, 0.515, 0.955) both
+  animation: slide-in-blurred-bottom 0.6s cubic-bezier(0.455, 0.030, 0.515, 0.955) both
+@-webkit-keyframes slide-in-blurred-bottom 
+  0% 
+    -webkit-transform: translateY(1000px) scaleY(2.5) scaleX(0.2)
+    transform: translateY(1000px) scaleY(2.5) scaleX(0.2)
+    -webkit-transform-origin: 50% 100%
+    transform-origin: 50% 100%
+    -webkit-filter: blur(40px)
+    filter: blur(40px)
+    opacity: 0
+  100% 
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1)
+    transform: translateY(0) scaleY(1) scaleX(1)
+    -webkit-transform-origin: 50% 50%
+    transform-origin: 50% 50%
+    -webkit-filter: blur(0)
+    filter: blur(0)
+    opacity: 1
+@keyframes slide-in-blurred-bottom 
+  0% 
+    -webkit-transform: translateY(1000px) scaleY(2.5) scaleX(0.2)
+    transform: translateY(1000px) scaleY(2.5) scaleX(0.2)
+    -webkit-transform-origin: 50% 100%
+    transform-origin: 50% 100%
+    -webkit-filter: blur(40px)
+    filter: blur(40px)
+    opacity: 0
+  100% 
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1)
+    transform: translateY(0) scaleY(1) scaleX(1)
+    -webkit-transform-origin: 50% 50%
+    transform-origin: 50% 50%
+    -webkit-filter: blur(0)
+    filter: blur(0)
+    opacity: 1
+.slide-out-blurred-right 
+  -webkit-animation: slide-out-blurred-right 0.45s cubic-bezier(0.455, 0.030, 0.515, 0.955) both
+  animation: slide-out-blurred-right 0.45s cubic-bezier(0.455, 0.030, 0.515, 0.955) both
+@-webkit-keyframes slide-out-blurred-right 
+  0% 
+    -webkit-transform: translateX(0) scaleY(1) scaleX(1)
+    transform: translateX(0) scaleY(1) scaleX(1)
+    -webkit-transform-origin: 50% 50%
+    transform-origin: 50% 50%
+    -webkit-filter: blur(0)
+    filter: blur(0)
+    opacity: 1
+  100% 
+    -webkit-transform: translateX(1000px) scaleX(2) scaleY(0.2)
+    transform: translateX(1000px) scaleX(2) scaleY(0.2)
+    -webkit-transform-origin: 0% 50%
+    transform-origin: 0% 50%
+    -webkit-filter: blur(40px)
+    filter: blur(40px)
+    opacity: 0
+@keyframes slide-out-blurred-right 
+  0% 
+    -webkit-transform: translateX(0) scaleY(1) scaleX(1)
+    transform: translateX(0) scaleY(1) scaleX(1)
+    -webkit-transform-origin: 50% 50%
+    transform-origin: 50% 50%
+    -webkit-filter: blur(0)
+    filter: blur(0)
+    opacity: 1
+  100% 
+    -webkit-transform: translateX(1000px) scaleX(2) scaleY(0.2)
+    transform: translateX(1000px) scaleX(2) scaleY(0.2)
+    -webkit-transform-origin: 0% 50%
+    transform-origin: 0% 50%
+    -webkit-filter: blur(40px)
+    filter: blur(40px)
+    opacity: 0
+  

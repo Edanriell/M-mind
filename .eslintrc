@@ -1,0 +1,42 @@
+{
+	"parser": "@babel/eslint-parser",
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"plugins": ["prettier"],
+	"extends": ["airbnb-base", "eslint:recommended", "plugin:prettier/recommended"],
+	"parserOptions": {
+		"requireConfigFile": false,
+		"ecmaVersion": 12,
+		"sourceType": "module"
+	},
+	"rules": {
+		"quotes": ["error", "double"],
+		"class-methods-use-this": "off",
+		"no-restricted-syntax": "off",
+		"no-use-before-define": "off",
+		"import/extensions": "off",
+		"import/prefer-default-export": "off",
+		"no-plusplus": "off",
+		"max-len": [
+			"error",
+			{
+				"code": 100,
+				"tabWidth": 4
+			}
+		],
+		"no-param-reassign": "off",
+		"no-underscore-dangle": "off",
+		"import/no-unresolved": "off",
+		"consistent-return": "off",
+		"no-prototype-builtins": "off",
+		"no-nested-ternary": "off",
+		"prettier/prettier": [
+			"error",
+			{
+				"endOfLine": "auto"
+			}
+		]
+	}
+}

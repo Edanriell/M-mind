@@ -1,0 +1,42 @@
+.message
+  grid-column: 1 / -1
+  width: 100%
+  padding: 20px
+  margin: 10px auto
+  font-family: "SourceSansPro-Regular", "Arial", sans-serif
+  font-weight: 400
+  font-style: normal
+  font-size: 1.6rem
+  line-height: 2.011rem
+  box-shadow: 0px 5px 30px rgba(29, 29, 32, 0.07) 
+  color: white
+.error
+  background: rgba(12, 12, 13, 1)
+  border: 1px solid rgba(12, 12, 13, 1)
+  &__text
+    display: inline-block
+    text-transform: uppercase
+    margin: 0
+    padding: 0
+    color: white
+.fade-out-bck 
+  -webkit-animation: fade-out-bck 0.25s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
+  animation: fade-out-bck 0.25s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
+@-webkit-keyframes fade-out-bck 
+  0% 
+    -webkit-transform: perspective(800px) translateZ(0)
+    transform: perspective(800px) translateZ(0)
+    opacity: 1
+  100% 
+    -webkit-transform: perspective(800px) translateZ(-80px)
+    transform: perspective(800px) translateZ(-80px)
+    opacity: 0
+@keyframes fade-out-bck 
+  0% 
+    -webkit-transform: perspective(800px) translateZ(0)
+    transform: perspective(800px) translateZ(0)
+    opacity: 1
+  100% 
+    -webkit-transform: perspective(800px) translateZ(-80px)
+    transform: perspective(800px) translateZ(-80px)
+    opacity: 0

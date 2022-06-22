@@ -1,0 +1,63 @@
+#page-header
+  grid-row: header
+.main-nav
+  display: grid
+  grid-template-columns: 131px 500px 1fr
+  grid-template-areas: "logotype search user-nav"
+  column-gap: 300px
+  &__logotype
+    grid-area: logotype
+    margin: 36px 0 0 0
+    width: 131px
+    height: 28px
+  &__search
+    grid-area: search
+    margin: 30px 0 0 0
+    position: relative
+    &__input
+      width: 500px
+      height: 40px
+      border: 1px solid #0C0C0D
+      border-radius: 30px
+      padding: 10px 44px 10px 44px
+      outline: none
+      &::-webkit-search-cancel-button
+        -webkit-appearance: none
+        cursor: pointer
+        height: 20px
+        width: 20px
+        background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg) no-repeat 50% 50%
+        background-size: contain
+        transition: all 0.15s ease-in-out
+      &::placeholder
+        line-height: 2.011rem
+        color: rgba(12, 12, 13, 0.3)
+    &:before
+      display: inline-block
+      position: absolute
+      content: ''
+      margin: 13px 10px 13px 20px
+      width: 14px
+      height: 14px
+      background: url('../img/icons/search.svg') center no-repeat
+  &__user-nav
+    margin: 30px 0 0 0
+    li
+      position: relative
+      margin: 0 15px 0 0
+      width: 40px
+      height: 40px
+      overflow: hidden
+      border: 1px solid #0C0C0D
+      border-radius: 50%
+      a
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -48%)
+        padding: 10px 15px
+      &:nth-last-of-type(1) img
+        width: 40px
+        height: 40px
+        border-radius: 50%
+          

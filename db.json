@@ -1,0 +1,154 @@
+{
+  "images":[
+    {
+      "imageId": 0,
+      "imageSize" : "large",
+      "imageCardClass": "item--large",
+      "imageUrl": "./img/photos/1.png",
+      "imageLikes": "32 574",
+      "imageAltText": "",
+      "imageWidth" : 548,
+      "imageHeight": 380  
+    },
+    {
+      "imageId": 1,
+      "imageSize" : "large",
+      "imageCardClass": "item--large",
+      "imageUrl": "./img/photos/2.png",
+      "imageLikes": "45 670",
+      "imageAltText": "",
+      "imageWidth" : 548,
+      "imageHeight": 380  
+    },
+    {
+      "imageId": 2,
+      "imageSize" : "medium",
+      "imageCardClass": "item--medium",
+      "imageUrl": "./img/photos/3.png",
+      "imageLikes": "42 666",
+      "imageAltText": "",
+      "imageWidth" : 264,
+      "imageHeight": 380  
+    },
+    {
+      "imageId": 3,
+      "imageSize" : "large",
+      "imageCardClass": "item--large",
+      "imageUrl": "./img/photos/4.png",
+      "imageLikes": "12 054",
+      "imageAltText": "",
+      "imageWidth" : 548,
+      "imageHeight": 380  
+    },
+    {
+      "imageId": 4,
+      "imageSize" : "medium",
+      "imageCardClass": "item--medium",
+      "imageUrl": "./img/photos/5.png",
+      "imageLikes": "12 839",
+      "imageAltText": "",
+      "imageWidth" : 264,
+      "imageHeight": 380  
+    },
+    {
+      "imageId": 5,
+      "imageSize" : "medium",
+      "imageCardClass": "item--medium",
+      "imageUrl": "./img/photos/6.png",
+      "imageLikes": "94 326",
+      "imageAltText": "",
+      "imageWidth" : 264,
+      "imageHeight": 380  
+    },
+    {
+      "imageId": 6,
+      "imageSize" : "medium",
+      "imageCardClass": "item--medium",
+      "imageUrl": "./img/photos/7.png",
+      "imageLikes": "29 683",
+      "imageAltText": "",
+      "imageWidth" : 264,
+      "imageHeight": 380  
+    },
+    {
+      "imageId": 7,
+      "imageSize" : "large",
+      "imageCardClass": "item--large",
+      "imageUrl": "./img/photos/8.png",
+      "imageLikes": "89 367",
+      "imageAltText": "",
+      "imageWidth" : 548,
+      "imageHeight": 380  
+    },
+    {
+      "imageId": 8,
+      "imageSize" : "small",
+      "imageCardClass": "item--small",
+      "imageUrl": "./img/photos/9.png",
+      "imageLikes": "84 669",
+      "imageAltText": "",
+      "imageWidth" : 548,
+      "imageHeight": 180  
+    },
+    {
+      "imageId": 9,
+      "imageSize" : "small",
+      "imageCardClass": "item--small",
+      "imageUrl": "./img/photos/10.png",
+      "imageLikes": "39 591",
+      "imageAltText": "",
+      "imageWidth" : 548,
+      "imageHeight": 180  
+    },
+    {
+      "imageId": 10,
+      "imageSize" : "medium",
+      "imageCardClass": "item--medium",
+      "imageUrl": "./img/photos/11.png",
+      "imageLikes": "9 854",
+      "imageAltText": "",
+      "imageWidth" : 264,
+      "imageHeight": 380  
+    },
+    {
+      "imageId": 11,
+      "imageSize" : "small",
+      "imageCardClass": "item--small",
+      "imageUrl": "./img/photos/12.png",
+      "imageLikes": "13 256",
+      "imageAltText": "",
+      "imageWidth" : 548,
+      "imageHeight": 180 
+    },
+    {
+      "imageId": 12,
+      "imageSize" : "large",
+      "imageCardClass": "item--large",
+      "imageUrl": "./img/photos/14.png",
+      "imageLikes": "90 181",
+      "imageAltText": "",
+      "imageWidth" : 548,
+      "imageHeight": 380  
+    },
+    {
+      "imageId": 13,
+      "imageSize" : "small",
+      "imageCardClass": "item--small",
+      "imageUrl": "./img/photos/13.png",
+      "imageLikes": "57 900",
+      "imageAltText": "",
+      "imageWidth" : 548,
+      "imageHeight": 180  
+    },
+    {
+      "imageId": 14,
+      "imageSize" : "medium",
+      "imageCardClass": "item--medium",
+      "imageUrl": "./img/photos/15.png",
+      "imageLikes": "112 563",
+      "imageAltText": "",
+      "imageWidth" : 264,
+      "imageHeight": 380  
+    }
+  ]
+}
